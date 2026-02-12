@@ -1,0 +1,19 @@
+Transfer Sets & COF Exclusion Summary
+============================================================
+
+=== CoRE-MOF 2019-ASR ===
+  Total: 12020 structures
+  Fine-tune (10%): 1202
+  Test (90%):      10818
+  Columns: ['filename', 'LCD', 'PLD', 'LFPD', 'cm3_g', 'ASA_m2_cm3', 'ASA_m2_g', 'NASA_m2_cm3', 'NASA_m2_g', 'AV_VF', 'AV_cm3_g', 'NAV_cm3_g', 'All_Metals', 'Has_OMS', 'Open_Metal_Sites', 'Extension', 'FSR_overlap', 'from_CSD', 'public', 'DISORDER', 'CSD_overlap_inCoRE', 'CSD_of_WoS_inCoRE', 'CSD_overlap_inCCDC', 'date_CSD', 'DOI_public', 'Note', 'Matched_CSD_of_CoRE', 'Possible_List_CSD_of_CoRE', 'dataset']
+
+=== GA_MOFs (Zero-Shot) ===
+  Total CIFs: 51163
+  Successfully parsed: 51163
+  Mean atoms/cell: 146.7
+  Mean volume: 4305.9 ų
+
+=== COF Exclusion ===
+  CoRE-COFs:    1242
+  CURATED-COFs: 0
+  Total:        1242

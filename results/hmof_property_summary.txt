@@ -1,0 +1,59 @@
+hMOF-mofdb Property Extraction Summary
+================================================================================
+
+Total structures: 32768
+
+=== CO2 Adsorption (298K) ===
+Structures with CO2 data: 32768 (100.0%)
+
+  CO2_uptake_0.01bar:
+    Available: 32768 (100.0%)
+    Mean: 0.1210 | Std: 0.2200
+    Min: 0.0000 | Max: 3.6223
+
+  CO2_uptake_0.05bar:
+    Available: 32768 (100.0%)
+    Mean: 0.4255 | Std: 0.5295
+    Min: 0.0000 | Max: 5.4745
+
+  CO2_uptake_0.1bar:
+    Available: 32768 (100.0%)
+    Mean: 0.7071 | Std: 0.7466
+    Min: 0.0000 | Max: 6.4593
+
+  CO2_uptake_0.5bar:
+    Available: 32768 (100.0%)
+    Mean: 2.0958 | Std: 1.4941
+    Min: 0.0000 | Max: 9.1566
+
+  CO2_uptake_1.0bar:
+    Available: 32768 (100.0%)
+    Mean: 2.9279 | Std: 1.6684
+    Min: 0.0000 | Max: 9.7650
+
+  CO2_uptake_2.5bar:
+    Available: 32768 (100.0%)
+    Mean: 5.4240 | Std: 2.7592
+    Min: 0.0000 | Max: 15.7533
+
+=== CH4 Adsorption (298K) ===
+Structures with CH4 data: 32768 (100.0%)
+  Max uptake - Mean: 2.7969 | Range: [0.0000, 9.8828]
+
+=== H2 Adsorption (77K) ===
+Structures with H2 data: 32768 (100.0%)
+  Max uptake - Mean: 40.9570 | Range: [0.0000, 57.3199]
+
+=== N2 Adsorption (298K) ===
+Structures with N2 data: 32768 (100.0%)
+
+=== Pore Descriptors ===
+  LCD (A): 32768 structures | Mean: 8.51 | Range: [0.00, 24.25]
+  PLD (A): 32768 structures | Mean: 7.04 | Range: [0.00, 21.75]
+  Surface Area (m2/g): 32768 structures | Mean: 2439.27 | Range: [0.00, 6741.70]
+  Void Fraction: 32768 structures | Mean: 0.62 | Range: [0.00, 0.93]
+
+=== Structural Features ===
+  Atoms/cell: Mean 119.9 | Range: [18, 639]
+  Cell Volume (A3): Mean 3174.5 | Range: [373.9, 9794.0]
+  Unique elements: Mean 5.0 | Range: [3, 6]

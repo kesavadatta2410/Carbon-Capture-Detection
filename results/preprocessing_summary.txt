@@ -1,0 +1,48 @@
+Preprocessing Pipeline Summary
+============================================================
+
+=== Outlier Clipping (IQR) ===
+  CO2_uptake_0.01bar: 3870 clipped (11.81%)
+    Bounds: [-0.1272, 0.2647]
+  CO2_uptake_0.05bar: 2909 clipped (8.88%)
+    Bounds: [-0.5542, 1.1903]
+  CO2_uptake_0.1bar: 2044 clipped (6.24%)
+    Bounds: [-0.9548, 2.1183]
+  CO2_uptake_0.5bar: 512 clipped (1.56%)
+    Bounds: [-2.1326, 6.0459]
+  CO2_uptake_1.0bar: 224 clipped (0.68%)
+    Bounds: [-1.8904, 7.5688]
+  CO2_uptake_2.5bar: 137 clipped (0.42%)
+    Bounds: [-2.3035, 13.0274]
+  CH4_uptake_max: 679 clipped (2.07%)
+    Bounds: [-0.8373, 6.3209]
+  H2_uptake_max: 1940 clipped (5.92%)
+    Bounds: [11.7687, 73.9383]
+  N2_uptake_max: 2253 clipped (6.88%)
+    Bounds: [-0.0334, 0.5909]
+
+=== Log Transforms (|skew| > 2.0) ===
+
+=== Train/Val/Test Splits ===
+  Train: 26214 (80%)
+  Val:   3277 (10%)
+  Test:  3277 (10%)
+
+=== Feature Columns (17) ===
+  num_elements
+  num_atoms
+  cell_volume
+  lcd
+  pld
+  surface_area_m2g
+  surface_area_m2cm3
+  void_fraction
+  CO2_uptake_0.01bar
+  CO2_uptake_0.05bar
+  CO2_uptake_0.1bar
+  CO2_uptake_0.5bar
+  CO2_uptake_1.0bar
+  CO2_uptake_2.5bar
+  CH4_uptake_max
+  H2_uptake_max
+  N2_uptake_max
