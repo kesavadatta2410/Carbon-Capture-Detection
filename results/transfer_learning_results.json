@@ -1,0 +1,30 @@
+{
+  "finetune_samples": 962,
+  "test_samples": 10818,
+  "zero_shot": {
+    "MAE": 0.3696,
+    "RMSE": 0.4601,
+    "R2": 0.0
+  },
+  "frozen_gnn": {
+    "val_best_r2": 0.0,
+    "test": {
+      "MAE": 0.0775,
+      "RMSE": 0.125,
+      "R2": 0.0
+    },
+    "elapsed_s": 578,
+    "epochs": 30
+  },
+  "full_finetune": {
+    "val_best_r2": 0.0,
+    "test": {
+      "MAE": 0.3017,
+      "RMSE": 0.3631,
+      "R2": 0.0
+    },
+    "elapsed_s": 968,
+    "epochs": 50,
+    "lr": 5e-05
+  }
+}

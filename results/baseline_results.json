@@ -1,0 +1,44 @@
+{
+  "xgboost": {
+    "val": {
+      "mae": 0.1946,
+      "rmse": 0.2679,
+      "r2": 0.9284
+    },
+    "test": {
+      "mae": 0.1926,
+      "rmse": 0.2642,
+      "r2": 0.93
+    },
+    "train_time": 2.7,
+    "best_iteration": 499
+  },
+  "random_forest": {
+    "val": {
+      "mae": 0.287,
+      "rmse": 0.3888,
+      "r2": 0.8491
+    },
+    "test": {
+      "mae": 0.2824,
+      "rmse": 0.3855,
+      "r2": 0.8509
+    },
+    "train_time": 1.8
+  },
+  "mlp": {
+    "val": {
+      "mae": 0.23,
+      "rmse": 0.3086,
+      "r2": 0.9049
+    },
+    "test": {
+      "mae": 0.2272,
+      "rmse": 0.3019,
+      "r2": 0.9086
+    },
+    "train_time": 119.7,
+    "n_params": 81537,
+    "epochs_trained": 200
+  }
+}
