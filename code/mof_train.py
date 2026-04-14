@@ -254,6 +254,9 @@ def train_epoch(model, loader, optimizer, scheduler, device,
             y = y.to(device)
             pred = model(graph_b, chem, quant, qmask, mof_desc)
         
+        pred = pred.view(-1)
+        y = y.view(-1)
+
         loss = criterion(pred, y)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=clip_norm)
@@ -269,10 +272,10 @@ def train_epoch(model, loader, optimizer, scheduler, device,
 
 @torch.no_grad()
 def evaluate(model, loader, device, gnn_only: bool = False) -> Tuple[dict, np.ndarray, np.ndarray]:
-    """Evaluate model on a dataset."""
+    """Evaluate model on a dataset with safe shape handling."""
     model.eval()
     all_preds, all_targets = [], []
-    
+
     for batch in loader:
         if gnn_only:
             graph_b, _, _, _, _, y = batch
@@ -285,14 +288,30 @@ def evaluate(model, loader, device, gnn_only: bool = False) -> Tuple[dict, np.nd
             quant = quant.to(device)
             qmask = qmask.to(device)
             pred = model(graph_b, chem, quant, qmask, mof_desc)
-        
-        all_preds.append(pred.cpu().numpy())
+
+        # Move to CPU safely
+        pred = pred.detach().cpu()
+        y = y.detach().cpu()
+
+        # Ensure tensors are at least 1D
+        if pred.dim() == 0:
+            pred = pred.unsqueeze(0)
+        if y.dim() == 0:
+            y = y.unsqueeze(0)
+
+        # Flatten to consistent shape
+        pred = pred.view(-1)
+        y = y.view(-1)
+
+        # Convert to numpy (guaranteed 1D)
+        all_preds.append(pred.numpy())
         all_targets.append(y.numpy())
-    
-    preds = np.concatenate(all_preds)
-    targets = np.concatenate(all_targets)
+
+    # Safe concatenation
+    preds = np.concatenate(all_preds, axis=0)
+    targets = np.concatenate(all_targets, axis=0)
+
     metrics = compute_metrics(targets, preds)
-    
     return metrics, preds, targets
 
 
