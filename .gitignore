@@ -1,7 +1,6 @@
 # ── Data & Database (too large for GitHub) ──
 Database/
-data/
-
+data/graphs/
 # ── Model artifacts & checkpoints ──
 model/
 checkpoints/

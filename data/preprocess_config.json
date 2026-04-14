@@ -1,0 +1,105 @@
+{
+  "feature_columns": [
+    "num_elements",
+    "num_atoms",
+    "cell_volume",
+    "lcd",
+    "pld",
+    "surface_area_m2g",
+    "surface_area_m2cm3",
+    "void_fraction",
+    "CO2_uptake_0.01bar",
+    "CO2_uptake_0.05bar",
+    "CO2_uptake_0.1bar",
+    "CO2_uptake_0.5bar",
+    "CO2_uptake_1.0bar",
+    "CO2_uptake_2.5bar",
+    "CH4_uptake_max",
+    "H2_uptake_max",
+    "N2_uptake_max"
+  ],
+  "log_transformed_columns": [],
+  "skewness": {
+    "num_elements": -0.062,
+    "num_atoms": 1.568,
+    "cell_volume": 0.885,
+    "lcd": 0.796,
+    "pld": 0.856,
+    "surface_area_m2g": 0.146,
+    "surface_area_m2cm3": -0.948,
+    "void_fraction": -1.176,
+    "CO2_uptake_0.01bar": 1.169,
+    "CO2_uptake_0.05bar": 1.163,
+    "CO2_uptake_0.1bar": 1.133,
+    "CO2_uptake_0.5bar": 0.82,
+    "CO2_uptake_1.0bar": 0.474,
+    "CO2_uptake_2.5bar": 0.225,
+    "CH4_uptake_max": 0.342,
+    "H2_uptake_max": -1.165,
+    "N2_uptake_max": 0.391
+  },
+  "outlier_clipping": {
+    "CO2_uptake_0.01bar": {
+      "n_clipped": 3870,
+      "pct_clipped": 11.81,
+      "lower_bound": -0.1272,
+      "upper_bound": 0.2647
+    },
+    "CO2_uptake_0.05bar": {
+      "n_clipped": 2909,
+      "pct_clipped": 8.88,
+      "lower_bound": -0.5542,
+      "upper_bound": 1.1903
+    },
+    "CO2_uptake_0.1bar": {
+      "n_clipped": 2044,
+      "pct_clipped": 6.24,
+      "lower_bound": -0.9548,
+      "upper_bound": 2.1183
+    },
+    "CO2_uptake_0.5bar": {
+      "n_clipped": 512,
+      "pct_clipped": 1.56,
+      "lower_bound": -2.1326,
+      "upper_bound": 6.0459
+    },
+    "CO2_uptake_1.0bar": {
+      "n_clipped": 224,
+      "pct_clipped": 0.68,
+      "lower_bound": -1.8904,
+      "upper_bound": 7.5688
+    },
+    "CO2_uptake_2.5bar": {
+      "n_clipped": 137,
+      "pct_clipped": 0.42,
+      "lower_bound": -2.3035,
+      "upper_bound": 13.0274
+    },
+    "CH4_uptake_max": {
+      "n_clipped": 679,
+      "pct_clipped": 2.07,
+      "lower_bound": -0.8373,
+      "upper_bound": 6.3209
+    },
+    "H2_uptake_max": {
+      "n_clipped": 1940,
+      "pct_clipped": 5.92,
+      "lower_bound": 11.7687,
+      "upper_bound": 73.9383
+    },
+    "N2_uptake_max": {
+      "n_clipped": 2253,
+      "pct_clipped": 6.88,
+      "lower_bound": -0.0334,
+      "upper_bound": 0.5909
+    }
+  },
+  "split_sizes": {
+    "train": 26214,
+    "val": 3277,
+    "test": 3277
+  },
+  "random_state": 42,
+  "skew_threshold": 2.0,
+  "target_column": "CO2_uptake_1.0bar"
+}
