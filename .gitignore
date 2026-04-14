@@ -13,7 +13,7 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
-
+*.pkl
 # ── Logs ──
 *.log
 
