@@ -49,17 +49,10 @@ from torch_geometric.data import Batch
 from tqdm import tqdm
 
 # Local imports
-from hybrid_model_v2 import HybridMOFModel, GNNOnlyModel
-from train_hybrid_fixed import (
+from mof_model import HybridMOFModel, GNNOnlyModel
+from mof_train import (
     MOFDataset, collate_fn, evaluate,
     train_epoch, compute_metrics, run_training,
-    expected_calibration_error, negative_log_likelihood,
-)
-
-# Import enhanced model components
-from hybrid_model_v2 import (
-    DirectionalInteractionBlock, DirectionalRBF,
-    EdgeTypeEncoder, SAGPoolLayer, CrystalGraphAttention
 )
 
 DATA_DIR   = Path("data")

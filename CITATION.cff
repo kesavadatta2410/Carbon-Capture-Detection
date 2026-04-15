@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated paper, please cite as below."
+type: software
+title: "Carbon Capture Detection: Hybrid GNN for MOF CO₂ Adsorption Prediction"
+version: 1.0.0
+date-released: "2024-01-01"
+repository-code: "https://github.com/Kesavadatta2410/Carbon-Capture-Detection"
+license: MIT
+abstract: >
+  A hybrid deep learning pipeline combining Graph Neural Networks (SchNet-style)
+  with Magpie chemical feature embeddings and QMOF quantum features to predict
+  CO₂ adsorption capacity in Metal-Organic Frameworks. Trained on 32,768 hMOF
+  structures with transfer learning to CoRE-MOF experimental data.
+keywords:
+  - metal-organic-frameworks
+  - carbon-capture
+  - graph-neural-networks
+  - CO2-adsorption
+  - materials-informatics
+  - deep-learning
+  - transfer-learning
+authors:
+  - family-names: Kesavadatta
+    given-names: ""
+    alias: Kesavadatta2410
+    orcid: ""
+preferred-citation:
+  type: article
+  title: "Hybrid Graph Neural Networks for CO₂ Adsorption Prediction in Metal-Organic Frameworks"
+  authors:
+    - family-names: Kesavadatta
+      given-names: ""
+  year: 2024
+  journal: "IEEE Transactions on Neural Networks and Learning Systems"

@@ -1,0 +1,27 @@
+# ─── Core ML / DL ───────────────────────────────────────────────────────────
+torch>=2.1.0
+torch-geometric>=2.4.0
+torch-scatter>=2.1.2
+torch-sparse>=0.6.18
+torch-cluster>=1.6.3
+
+# ─── Scientific Computing ────────────────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# ─── Gradient Boosting / Baselines ──────────────────────────────────────────
+xgboost>=2.0.0
+joblib>=1.3.0
+
+# ─── Crystal Structure / Chemistry ──────────────────────────────────────────
+pymatgen>=2023.1.1
+matminer>=0.9.0
+
+# ─── Visualization ──────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+tqdm>=4.65.0

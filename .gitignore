@@ -1,26 +1,91 @@
-# ── Data & Database (too large for GitHub) ──
-Database/
-data/graphs/
-# ── Model artifacts & checkpoints ──
-model/
-checkpoints/
-
-# ── Virtual environment ──
-carbon/
-
-# ── Python cache ──
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 *.pyo
-.pytest_cache/
-*.pkl
-# ── Logs ──
-*.log
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
 
-# ── OS files ──
+# Virtual Environments
+venv/
+env/
+ENV/
+carbon/
+.env
+.venv
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
 Thumbs.db
 
-# ── IDE ──
-.vscode/
-.idea/
+# ── Project-Specific ────────────────────────────────────────────────────────
+# Large data files (managed separately / downloaded via guide)
+data/graphs/
+data/catalog.csv
+data/hmof_properties.csv
+data/hmof_ml_dataset.csv
+data/hmof_enhanced.csv
+data/hmof_train.csv
+data/hmof_val.csv
+data/hmof_test.csv
+data/chemical_features.npy
+data/chemical_features_summary.csv
+data/ga_mofs_test.csv
+data/core_mof_test.csv
+data/graph_stats.csv
+data/graph_stats_fixed.csv
+
+# Temporary files
+data/_tmp_*.csv
+
+# Large model artifacts (too big for git)
+model/random_forest.pkl
+checkpoints/
+
+# Raw databases (downloaded separately)
+Database/
+
+# Logs
+*.log
+preprocessing.log
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/_build/

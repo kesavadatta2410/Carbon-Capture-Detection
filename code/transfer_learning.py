@@ -42,8 +42,8 @@ from torch.optim import AdamW
 from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts
 from torch.utils.data import DataLoader, Dataset
 
-from hybrid_model_v2 import HybridMOFModel
-from train_hybrid_fixed import MOFDataset, collate_fn, compute_metrics, evaluate
+from mof_model import HybridMOFModel
+from mof_train import MOFDataset, collate_fn, compute_metrics, evaluate
 
 DATA_DIR   = Path("data")
 CKPT_DIR   = Path("checkpoints")
